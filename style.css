@@ -5,14 +5,25 @@
 }
 
 .preloader-wrapper {
-    width: 100vw;
-    height: 100dvh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: opacity 0.2s;
 }
 .preloader {
     animation: rotation 2s infinite;
+}
+
+.hide {
+    opacity: 0;
+}
+.none {
+    display: none;
 }
 
 @keyframes rotation {
